@@ -8,9 +8,18 @@ import edu.princeton.cs.algs4.In;
  */
 public abstract class Example {
 
+
     public static void main(String[] args) {
         String[] a = In.readStrings();
-        Example example = new Selection();
+        //选择排序
+//        Example selection = new Selection();
+//        test(selection, a);
+        //插入排序
+        Example insertion = new Insertion();
+        test(insertion, a);
+    }
+
+    public static void test(Example example, Comparable[] a) {
         example.sort(a);
         assert example.isSorted(a);
         example.show(a);
