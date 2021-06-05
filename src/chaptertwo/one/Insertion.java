@@ -27,4 +27,17 @@ public class Insertion extends Example {
         }
         return cnt;
     }
+
+    public int sort_Return_cost(Comparable[] a) {
+        int cnt = 0;
+        int N = a.length;
+        for (int i = 1; i < N; i++) {
+            cnt++;
+            for (int j = i; j > 0 && less(a[j], a[j-1]); j--) {
+                exch(a, j, j-1);
+                cnt++;
+            }
+        }
+        return cnt;
+    }
 }
