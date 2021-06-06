@@ -21,7 +21,6 @@ public class K13 {
         int index = 0;
         for (int i : randomBag) {
             a[index++] = i;
-            System.out.println("i = " + i);
         }
 
         int h = 1;
