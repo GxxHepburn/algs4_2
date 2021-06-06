@@ -11,7 +11,7 @@ public class K25 extends Example {
     public static void main(String[] args) {
         String alg1 = "K25";
         String alg2 = "Insertion";
-        int N = 100000;
+        int N = 10000;
         int T = 1;
         double t_k25 = SortCompare.timeRandomInput(alg1, N ,T);
         double t_insertion = SortCompare.timeRandomInput(alg2, N, T);
