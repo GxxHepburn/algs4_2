@@ -37,7 +37,7 @@ import java.util.List;
 24  全选          ctrl + A
 25  选中数行，整体向后移动             tab
 26  选中数行，整体往前移动             shift + tab
-27  查看类的机构：类似于eclipse的outline           ctrl + O(字母)
+27  查看类的结构：类似于eclipse的outline           ctrl + O(字母)
 28  重构：修改变量名与方法名(rename)            alt + shift + R
 29  大写转小写/小写转大写(toggle case)            ctrl + shift + Y
 30  生成构造/get/set/tostring               alt + shift + S
