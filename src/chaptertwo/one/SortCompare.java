@@ -24,6 +24,9 @@ public class SortCompare {
         if (alg.equals("K24")) {
             new K24().sort(a);
         }
+        if (alg.equals("K25")) {
+            new K25().sort(a);
+        }
         return  timer.elapsedTime();
     }
 
