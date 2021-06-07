@@ -6,26 +6,26 @@ import edu.princeton.cs.algs4.StdRandom;
 import java.util.Arrays;
 
 /**
- * shell排序的倍率是2.5，选择和插入都是在4.
  * @author gxx
- * @create 2021-06-07 16:32
+ * @create 2021-06-08 0:46
  */
-public class K27 {
+public class K31 {
 
     public static void main(String[] args) {
-        int N = 128;
+        int N = 1000;
         int T = 1;
+        double[] prev = timeRandomInput(N, T);
         while (true) {
+            N += N;
             double[] rst = timeRandomInput(N, T);
             double time_Shell = rst[0];
             double time_insertion = rst[1];
             double time_selection = rst[2];
-            StdOut.printf("For %d random Doubles\n  %s is", N, "Shell");
-            StdOut.printf(" %.1f times faster than %s\n", time_insertion/time_Shell, "Insertion");
-            System.out.println();
-            StdOut.printf("For %d random Doubles\n  %s is", N, "Shell");
-            StdOut.printf(" %.1f times faster than %s\n", time_selection/time_Shell, "Selection");
-            N += N;
+            StdOut.println("shell_ratio: " + time_Shell/prev[0] +
+                    "                   ,insertion_ratio: " + time_insertion/prev[1] +
+                    "                   ,selection_ratio:" + time_selection/prev[2]);
+            prev = rst;
+
         }
     }
 
