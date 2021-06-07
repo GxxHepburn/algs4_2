@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class K28 {
 
     public static void main(String[] args) {
-        int N = 10000;
+        int N = 10000;//2.7倍
         int T = 1;
         Integer[] a = new Integer[N];
         RandomBag<Integer> randomBag = new RandomBag<>();
