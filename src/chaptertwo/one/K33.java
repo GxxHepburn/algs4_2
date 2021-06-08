@@ -24,7 +24,7 @@ public class K33 {
 //        sort_Pic(insertion, x_scale, 1.0d/2, N, T);
 
         Selection selection = new Selection();
-        int T = 500;
+        int T = 1000;
         int x_scale = T+10;
         int N = 10000;
         sort_Pic(selection, x_scale, 1.0d/5, N, T);
