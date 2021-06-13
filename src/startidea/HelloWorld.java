@@ -8,5 +8,6 @@ public class HelloWorld {
 
     public void method() {
         //这是单行注释
+        System.out.println("Hello World!");
     }
 }
