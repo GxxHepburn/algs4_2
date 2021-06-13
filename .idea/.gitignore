@@ -6,5 +6,5 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
-algs4_2.iml
-.idea/
+/algs4_2.iml
+/.idea
