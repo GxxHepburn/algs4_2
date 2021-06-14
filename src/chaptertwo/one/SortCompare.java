@@ -1,5 +1,6 @@
 package chaptertwo.one;
 
+import chaptertwo.two.Merge;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
@@ -26,6 +27,9 @@ public class SortCompare {
         }
         if (alg.equals("K25")) {
             new K25().sort(a);
+        }
+        if (alg.equals("Merge")) {
+            Merge.sort(a);
         }
         return  timer.elapsedTime();
     }
