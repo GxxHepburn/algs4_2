@@ -71,7 +71,7 @@ public class K5 {
          *      merge(a, 32, 32, 33)    2
          *      merge(a, 34, 34, 35)    2
          *      merge(a, 36, 36, 37)    2
-         *
+         *19
          *      sz = 2
          *      merge(a, 0, 1, 3)       4
          *      merge(a, 4, 5, 7)       4
@@ -83,21 +83,23 @@ public class K5 {
          *      merge(a, 28, 29, 31)    4
          *      merge(a, 32, 33, 35)    4
          *      merge(a, 36, 37, 38)    3
-         *
+         *10
          *      sz = 4
          *      merge(a, 0, 3, 7)       8
          *      merge(a, 8, 11, 15)     8
          *      merge(a, 16, 19, 23)    8
          *      merge(a, 24, 27, 31)    8
          *      merge(a, 32, 35, 38)    7
-         *
+         *5
          *      sz = 8
          *      merge(a, 0, 7, 15)      16
          *      merge(a, 16, 23, 31)    16
-         *
+         *2
          *      sz = 16
          *      merge(a, 15, 31)        32
          *      merge(a, 31, 38)        39
+         *2
+         * 2+2+5+10+19=38
          */
 
         int N = 39;
