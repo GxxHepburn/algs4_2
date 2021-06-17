@@ -15,11 +15,17 @@ public class K9 {
         for (int i = 0; i < N; i++) {
             a[i] = N-i;
         }
+        sort(a);
         for (Integer integer : a) {
             System.out.println("integer = " + integer);
         }
-        sort(a);
-        for (Integer integer : a) {
+        
+        Integer[] b= new Integer[N];
+        for (int i = 0; i < N; i++) {
+            b[i] = N + 10 - i;
+        }
+        sort(b);
+        for (Integer integer : b) {
             System.out.println("integer = " + integer);
         }
     }
