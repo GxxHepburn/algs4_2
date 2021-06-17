@@ -32,9 +32,6 @@ public class K11_samllArrayInsertion {
     }
 
     private static void sort(Comparable[] a, int lo, int hi) {
-        if (hi <= lo) {
-            return;
-        }
         int mid = lo + (hi - lo) / 2;
         if (mid - lo + 1 < 15) {
             StdOut.println("insert: " + ++insertionCnt + " , lo: " + lo + " , mid: " + mid);
