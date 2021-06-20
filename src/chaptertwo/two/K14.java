@@ -11,8 +11,8 @@ public class K14 {
 
     public static void main(String[] args) {
 
-        int N = 10;
-        int M = 6;
+        int N = 36;
+        int M = 16;
         Comparable[] a = new Comparable[N];
         Comparable[] b= new Comparable[M];
         for (int i = 0; i < N; i++) {
@@ -43,7 +43,7 @@ public class K14 {
             } else if (Example.less(a[i], b[j])) {
                 des[k] = a[i++];
             } else {
-                des[k] = a[j++];
+                des[k] = b[j++];
             }
         }
         return des;
